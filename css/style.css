@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap');
+
+:root {
+  --primary-red: #f65351;
+  --primary-blue: #0a317b;
+  --neutral-white: #ffffff;
+  --neutral-very-light-grayish-blue: #f7fafd;
+  --neutral-light-grayish-blue-1: #f1f7fc;
+  --neutral-light-grayish-blue-2: #dde7ee;
+  --neutral-grayish-blue: #939dae;
+  --neutral-dark-grayish-blue: #5e6778;
+  --neutral-very-dark-blue: #1c202b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--neutral-very-light-grayish-blue);
+  padding: 0 2rem;
+}
+
+img {
+  width: 43.5px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.container {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--neutral-white);
+  width: 100%;
+  max-width: 620px;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 4px #dde7ee;
+  padding: 1.5rem;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--primary-blue);
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.header h3 {
+  color: var(--neutral-very-dark-blue);
+}
+
+#notifications {
+  display: flex;
+}
+
+#notification-cards {
+  display: none;
+}
+
+#notification-number-btn {
+  background: var(--primary-blue);
+  padding: 0.1rem 0.5rem;
+  color: var(--neutral-white);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+/* cards */
+.notification-card {
+  background: var(--neutral-light-grayish-blue-1);
+  border-radius: 5px;
+}
+
+.card {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.info-followers {
+  margin-left: 1rem;
+}
+
+.info-followers p {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.message {
+  cursor: pointer;
+  border: 2px solid var(--neutral-light-grayish-blue-2);
+  padding: 0.6rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.message:hover {
+  background: var(--neutral-light-grayish-blue-2);
+}
+
+.time {
+  margin-top: 0.2rem;
+  font-size: 13px;
+  color: var(--neutral-grayish-blue) !important;
+}
+
+.user-name {
+  font-weight: 800;
+  color: var(--neutral-very-dark-blue);
+  cursor: pointer;
+}
+
+.post {
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.post:hover,
+.user-name:hover {
+  color: var(--primary-blue);
+}
+
+.group {
+  color: var(--primary-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
